@@ -1,0 +1,145 @@
+.employee-card {
+  background: white;
+  border-radius: 20px; /* Curve shape */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Lite shadow */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border: 1px solid #f1f5f9;
+}
+
+.employee-content {
+  padding: 10px 25px 20px;
+}
+
+.employee-row {
+  display: flex;
+  gap: 20px;
+}
+
+.employee-row .employee-form-group {
+  flex: 1;
+}
+
+.employee-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.employee-card input,
+.employee-card select,
+.employee-card textarea {
+  padding: 12px 15px;
+  border-radius: 12px; /* Curve shape */
+  border: 1px solid #e2e8f0;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.employee-card textarea {
+  height: 100px;
+  resize: none;
+}
+
+.employee-button-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.employee-form-group label {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+
+
+
+.section-title {
+  margin: 25px 0 15px;
+  padding-bottom: 8px;
+  font-size: 19px;
+  font-weight: 700; /* Bolder */
+  border-bottom: 2px solid #f1f5f9;
+  color: #1e293b;
+}
+
+
+.employee-profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.doc-preview {
+  width: 120px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.profile-box {
+  align-items: center;
+  text-align: center;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .employee-card {
+    max-width: 95%;
+  }
+
+  .employee-row {
+    flex-direction: column;
+  }
+
+  .employee-row .employee-form-group {
+    width: 100%;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .employee-content {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 17px;
+  }
+
+  .employee-profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .doc-preview {
+    width: 100px;
+    height: 70px;
+  }
+
+  .employee-button-bar {
+    flex-direction: column;
+  }
+
+  .employee-button-bar button {
+    width: 100%;
+  }
+
+}

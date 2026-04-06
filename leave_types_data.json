@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "leave_name": "casual",
+    "leave_type": "Paid",
+    "description": "asdfgh",
+    "max_days": 0,
+    "status": "Active",
+    "monthly_accrual": "2.00",
+    "carry_forward": 1
+  }
+]

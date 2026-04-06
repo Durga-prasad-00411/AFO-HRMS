@@ -1,0 +1,167 @@
+/* Main Form Card Layout */
+.holiday-card {
+  background: white;
+  border-radius: 20px; /* Curve shape */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Lite shadow */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+  border: 1px solid #f1f5f9;
+}
+
+.holiday-content {
+  padding: 25px 35px;
+}
+
+/* Row (side-by-side fields) */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+/* Inputs, Select & Textarea */
+.holiday-card input,
+.holiday-card select,
+.holiday-card textarea,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border-radius: 12px; /* Curve shape */
+  border: 1px solid #e2e8f0;
+  margin-top: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.holiday-card input:focus,
+.holiday-card select:focus,
+.holiday-card textarea:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.holiday-card textarea,
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button Bar */
+.button-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.button-bar button {
+  min-width: 120px;
+  height: 44px;
+  border-radius: 12px; /* Curve shape */
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary Button */
+.btn-add {
+  background: #000;
+  color: #fff;
+}
+
+/* Secondary Button */
+.btn-cancel {
+  background: #64748b;
+  color: #fff;
+}
+
+.btn-add:hover,
+.btn-cancel:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Form Error */
+.form-error {
+  background: #fef2f2;
+  color: #ef4444;
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #fee2e2;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+/* Validation Errors */
+.error-field {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.error-label {
+  color: #ef4444 !important;
+}
+
+.error-card {
+  border: 2px solid #ef4444 !important;
+  box-shadow: 0 10px 40px rgba(239, 68, 68, 0.15) !important;
+  background-color: #fffafa !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-2px);
+}
+
+.error-card .holiday-content,
+.error-card .employee-content,
+.error-card .termination-form-card,
+.error-card form {
+  background-color: transparent !important;
+}
+
+/* Internal Row Highlighting if needed */
+.error-card .employee-row, 
+.error-card .row {
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .holiday-card {
+    width: 95%;
+  }
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

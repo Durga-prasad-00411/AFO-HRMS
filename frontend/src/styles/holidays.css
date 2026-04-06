@@ -1,0 +1,207 @@
+/* ========================================
+   CARD LAYOUT
+======================================== */
+
+.holiday-card {
+  background: #ffffff;
+  border-radius: 20px; /* Increased curve */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+.holiday-content {
+  padding: 20px 30px;
+}
+
+.holiday-content h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+
+/* ========================================
+   FORM LAYOUT
+======================================== */
+
+/* Row (Side-by-side fields) */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Required star */
+.required {
+  color: #000;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+.holiday-card input,
+.holiday-card select,
+.holiday-card textarea {
+  padding: 12px 15px;
+  border-radius: 12px; /* Increased curve */
+  border: 1px solid #e2e8f0;
+  margin-top: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.holiday-card input:focus,
+.holiday-card select:focus,
+.holiday-card textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.holiday-card textarea {
+  height: 100px;
+  resize: none;
+}
+
+
+/* ========================================
+   BUTTON BAR
+======================================== */
+
+.button-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.button-bar button {
+  min-width: 120px;
+  height: 44px;
+  border-radius: 12px; /* Increased curve */
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary / Add */
+.btn-add {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+/* Cancel */
+.btn-cancel {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.btn-add:hover,
+.btn-cancel:hover {
+  opacity: 0.85;
+}
+
+
+/* ========================================
+   FORM ERROR MESSAGE (Optional)
+======================================== */
+
+.form-error {
+  background: #f3f3f3;
+  color: #000;
+  padding: 8px 12px;
+  border-left: 3px solid #000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .holiday-card {
+    max-width: 95%;
+  }
+
+  .holiday-content {
+    padding: 18px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .holiday-content {
+    padding: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .button-bar {
+    flex-direction: column;
+  }
+
+  .button-bar button {
+    width: 100%;
+  }
+
+  .holiday-content h2 {
+    font-size: 18px;
+  }
+
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .holiday-content {
+    padding: 12px;
+  }
+
+  .holiday-card input,
+  .holiday-card select,
+  .holiday-card textarea {
+    font-size: 13px;
+  }
+
+}

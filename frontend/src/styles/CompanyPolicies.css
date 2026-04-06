@@ -1,0 +1,155 @@
+
+.policies-page {
+  padding: 30px;
+}
+
+.policies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.policies-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.add-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px; /* Curve shape */
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.policies-empty {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+}
+
+
+.policy-card {
+  background: white;
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+  max-width: 900px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+  border: 1px solid #f1f5f9;
+}
+
+.policy-content {
+  padding: 25px 35px;
+}
+
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+
+
+.policy-card input,
+.policy-card select,
+.policy-card textarea {
+  padding: 12px 15px;
+  border-radius: 12px; 
+  border: 1px solid #e2e8f0;
+  margin-top: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #1e293b;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.policy-card input:focus,
+.policy-card select:focus,
+.policy-card textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.policy-card textarea {
+  height: 120px;
+  resize: none;
+}
+
+
+
+.button-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.button-bar button {
+  min-width: 120px;
+  height: 44px;
+  border-radius: 12px; 
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-add {
+  background: #000;
+  color: #fff;
+  flex: 1;
+}
+
+.btn-cancel {
+  background: #64748b;
+  color: white;
+  flex: 1;
+}
+
+.btn-add:hover,
+.btn-cancel:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.policy-card input::placeholder,
+.policy-card textarea::placeholder {
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

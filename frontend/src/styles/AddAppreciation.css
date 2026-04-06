@@ -1,0 +1,130 @@
+/* Main Container */
+.award-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Form Box */
+.award-form {
+  background: #ffffff;
+  width: 800px;
+  padding: 35px 40px;
+  border-radius: 20px; /* Curve shape */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Lite shadow */
+  border: 1px solid #f1f5f9;
+}
+
+/* Heading */
+.award-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e293b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Row (side-by-side fields) */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* Labels */
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Inputs, Select & Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border-radius: 12px; /* Curve shape */
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 13px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 12px; /* Curve shape */
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover Effect */
+.save-btn:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  color: #ef4444;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  color: #10b981;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .award-form {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

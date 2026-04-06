@@ -1,0 +1,330 @@
+.simple-container {
+  padding: 20px;
+}
+
+.page-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 16px; /* Curved shape */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid #f1f5f9;
+}
+
+/* Add Button */
+.small-btn {
+  padding: 10px 20px; /* Better padding */
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #131314;
+  color: white;
+  border: none;
+  border-radius: 12px; /* Curved shape */
+  cursor: pointer;
+  width: auto;
+  transition: all 0.2s ease;
+}
+
+.small-btn:hover {
+  background-color: #0d0d0d;
+}
+
+/* Search Wrapper */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Search Input */
+.search-input {
+  padding: 10px 35px 10px 15px;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px; /* Curved shape */
+  width: 240px;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #131314;
+}
+
+/* Search Icon on Right */
+.search-icon {
+  position: absolute;
+  right: 8px;
+  font-size: 14px;
+  color: #888;
+  pointer-events: none;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 20px; /* Large curved shape */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f6;
+  background: white;
+  margin-top: 10px;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: left;
+}
+
+.leave-table th {
+  background-color: #f8fafc;
+  color: #1e293b; /* Darker color for more contrast */
+  font-weight: 800; /* Extra bold */
+  text-transform: uppercase;
+  font-size: 13px; /* Increased size */
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.leave-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.leave-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.leave-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Module Themes */
+.theme-blue .small-btn { background-color: var(--primary-blue); }
+.theme-blue .leave-table th { border-top: 3px solid var(--primary-blue); }
+
+.theme-emerald .small-btn { background-color: var(--primary-emerald); }
+.theme-emerald .leave-table th { border-top: 3px solid var(--primary-emerald); }
+
+.theme-orange .small-btn { background-color: var(--primary-orange); }
+.theme-orange .leave-table th { border-top: 3px solid var(--primary-orange); }
+
+.theme-violet .small-btn { background-color: var(--primary-violet); }
+.theme-violet .leave-table th { border-top: 3px solid var(--primary-violet); }
+
+.theme-cyan .small-btn { background-color: var(--primary-cyan); }
+.theme-cyan .leave-table th { border-top: 3px solid var(--primary-cyan); }
+
+.theme-indigo .small-btn { background-color: var(--primary-indigo); }
+.theme-indigo .leave-table th { border-top: 3px solid var(--primary-indigo); }
+
+.theme-pink .small-btn { background-color: var(--primary-pink); }
+.theme-pink .leave-table th { border-top: 3px solid var(--primary-pink); }
+
+.theme-red .small-btn { background-color: var(--primary-red); }
+.theme-red .leave-table th { border-top: 3px solid var(--primary-red); }
+
+/* Status Pills */
+.status-pill {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  text-transform: capitalize;
+}
+
+.status-pill.active {
+  background-color: #ecfdf5;
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.status-pill.inactive {
+  background-color: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.status-active {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.status-inactive {
+  color: rgb(247, 0, 0);
+  font-weight: 400;
+}
+
+.status-pending {
+  color: #f39c12;
+  font-weight: 500;
+}
+
+.status-high, .status-urgent {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.status-normal {
+  color: #f1c40f;
+  font-weight: 500;
+}
+
+.status-low {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.status-resolved, .status-closed {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.status-review {
+  color: #9b59b6;
+  font-weight: 500;
+}
+
+/* Award types colors */
+.type-achievement {
+  color: #f39c12;
+  font-weight: 500;
+}
+
+.type-excellence {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.type-service {
+  color: #9b59b6;
+  font-weight: 500;
+}
+
+.type-default {
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+.edit-btn {
+  color: #131314;
+}
+
+.delete-btn {
+  color: #131314;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 6px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.yes-btn {
+  background-color: #131314;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.no-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.yes-btn:hover,
+.no-btn:hover {
+  opacity: 0.8;
+}
+
+.view-btn {
+  color: #131314;
+}
+
+/* FILTER HEADER */
+
+.filter-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:15px 0;
+}
+
+/* RIGHT SIDE DROPDOWNS */
+
+.dropdown-filters{
+display:flex;
+gap:12px;
+}
+
+.dropdown-filters > div{
+width:170px;
+}
